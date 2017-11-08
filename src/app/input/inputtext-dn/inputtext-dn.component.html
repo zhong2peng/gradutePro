@@ -1,0 +1,32 @@
+<h3 class="first">Basic</h3>
+<input id="input" type="text" size="30" pInputText [(ngModel)]="text">
+<span id="text">{{text}}</span>
+
+<h3>Float Label</h3>
+<span class="ui-float-label">
+  <input id="float-input" type="text" size="30" pInputText>
+  <label for="float-input">Username</label>
+</span>
+
+<h3>Disabled</h3>
+<input id="disabled-input" type="text" size="30" pInputText [disabled]="disabled" />
+
+<button id="disabled-btn" type="button" (click)="toggleDisabled()" pButton label="Toggle"></button>
+
+<div class="ui-inputgroup">
+  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+  <input type="text" pInputText placeholder="Username">         
+</div>
+
+<div class="ui-inputgroup">
+  <span class="ui-inputgroup-addon"><i class="fa fa-credit-card"></i></span>  
+  <span class="ui-inputgroup-addon"><i class="fa fa-cc-visa"></i></span>   
+  <input type="text" pInputText placeholder="Price"> 
+  <span class="ui-inputgroup-addon">$</span>  
+  <span class="ui-inputgroup-addon">.00</span>      
+</div>
+
+<span class="ui-float-label">
+  <input id="float-input" type="text" size="30" pInputText> 
+  <label for="float-input">Username</label>
+</span>
