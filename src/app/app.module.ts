@@ -1,3 +1,15 @@
+import { TreetableDnComponent } from './data/treetable-dn/treetable-dn.component';
+import { TreeDnComponent } from './data/tree-dn/tree-dn.component';
+import { ScheduleDnComponent } from './data/schedule-dn/schedule-dn.component';
+import { PicklistDnComponent } from './data/picklist-dn/picklist-dn.component';
+import { PaiginatorDnComponent } from './data/paiginator-dn/paiginator-dn.component';
+import { OrderlistDnComponent } from './data/orderlist-dn/orderlist-dn.component';
+import { OrgchartDnComponent } from './data/orgchart-dn/orgchart-dn.component';
+import { DataTableDnComponent } from './data/data-table-dn/data-table-dn.component';
+import { DataScrollerDnComponent } from './data/data-scroller-dn/data-scroller-dn.component';
+import { DataListDnComponent } from './data/data-list-dn/data-list-dn.component';
+import { DataGridDnComponent } from './data/data-grid-dn/data-grid-dn.component';
+import { CarouselDnComponent } from './data/carousel-dn/carousel-dn.component';
 import { MultiUseButtonComponent } from './input/multi-use-button/multi-use-button.component';
 import { SelectbuttonDnComponent } from './input/selectbutton-dn/selectbutton-dn.component';
 import { SpinnerDnComponent } from './input/spinner-dn/spinner-dn.component';
@@ -18,7 +30,7 @@ import { ChipsComponent } from './input/chips/chips.component';
 import { CheckboxDnComponent } from './input/checkbox-dn/checkbox-dn.component';
 import { routes } from './app.routing';
 import { RouterModule } from '@angular/router';
-import { HttpModule} from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { CalendarDnComponent } from './input/calendar-dn/calendar-dn.component';
 import { AutocompleteDnComponent } from './input/autocomplete-dn/autocomplete-dn.component';
 import { InputGroupDnComponent } from './input/input-group-dn/input-group-dn.component';
@@ -41,11 +53,14 @@ import {
   BreadcrumbModule, ContextMenuModule, MegaMenuModule,
   MenubarModule, PanelMenuModule, SlideMenuModule,
   StepsModule, TabMenuModule, TieredMenuModule,
-  CheckboxModule, RadioButtonModule, AutoCompleteModule, 
-  CalendarModule, ChipsModule, ColorPickerModule, 
-  DropdownModule, EditorModule, InputSwitchModule, 
-  InputTextModule, InputTextareaModule, ListboxModule, 
-  InputMaskModule, MultiSelectModule, PasswordModule, RatingModule, SliderModule, SpinnerModule, SelectButtonModule, ToggleButtonModule, TriStateCheckboxModule
+  CheckboxModule, RadioButtonModule, AutoCompleteModule,
+  CalendarModule, ChipsModule, ColorPickerModule,
+  DropdownModule, EditorModule, InputSwitchModule,
+  InputTextModule, InputTextareaModule, ListboxModule,
+  InputMaskModule, MultiSelectModule, PasswordModule,
+  RatingModule, SliderModule, SpinnerModule,
+  SelectButtonModule, ToggleButtonModule, TriStateCheckboxModule,
+  CarouselModule, DataGridModule, Footer, Header, DataListModule, DataScrollerModule, SharedModule, DataTableModule, OrganizationChartModule, OrderListModule, PaginatorModule, PickListModule, ScheduleModule, TreeModule, TreeTableModule
 } from 'primeng/primeng';
 import { MenuModuleComponent } from './menu/menu-module/menu-module.component';
 import { NavbarComponent } from './nav/navbar/navbar.component';
@@ -93,7 +108,19 @@ import { AppComponent } from './app.component';
     SliderDnComponent,
     SpinnerDnComponent,
     SelectbuttonDnComponent,
-    MultiUseButtonComponent
+    MultiUseButtonComponent,
+    CarouselDnComponent,
+    DataGridDnComponent,
+    DataListDnComponent,
+    DataScrollerDnComponent,
+    DataTableDnComponent,
+    OrgchartDnComponent,
+    OrderlistDnComponent,
+    PaiginatorDnComponent,
+    PicklistDnComponent,
+    ScheduleDnComponent,
+    TreeDnComponent,
+    TreetableDnComponent
   ],
   imports: [
     BrowserModule,
@@ -137,7 +164,20 @@ import { AppComponent } from './app.component';
     SpinnerModule,
     SelectButtonModule,
     ToggleButtonModule,
-    TriStateCheckboxModule
+    TriStateCheckboxModule,
+    CarouselModule,
+    DataGridModule,
+    DataListModule,
+    DataScrollerModule,
+    DataTableModule,
+    SharedModule,
+    OrganizationChartModule,
+    OrderListModule,
+    PaginatorModule,
+    PickListModule,
+    ScheduleModule,
+    TreeModule,
+    TreeTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
